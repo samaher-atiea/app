@@ -1,0 +1,223 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        width:100%;
+        height:100px;
+        background-image: linear-gradient(to right,red,rgb(233, 97, 97));
+    }
+    #logoBox{
+        width:30%;
+        height: 100%;
+        float:right;
+        background-color: rgb(242, 243, 247);
+    }
+    #h1header{
+        float:left;
+        line-height: 100px;
+        padding:0 15px;
+        
+    }
+    #logo{
+        height:100%;
+        border-radius: 50%;
+        
+    }
+    header a{
+        color:black;
+    }
+    nav{
+        width:70%;
+        text-align: center;
+    }
+    nav a{
+        text-decoration: none;
+        color:white;
+        font-weight: bold;
+        display: inline-block;
+    }
+    nav li{
+        display: inline-block;
+        line-height: 100px;
+        width:100px;
+        text-align: center;
+    }
+    nav a:hover{
+        background-color: white;
+        color: black;
+        height:100%;
+        width:100%;
+       
+    }
+    main{
+        width:100%;
+        height: 450px;
+        background-color: rgb(236, 67, 67);
+        border-top:3px solid white;
+        animation-name: changebackground ;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        
+     
+    }
+    aside{
+        width:30%;
+        height: 100%;
+        background-color: rgb(245, 245, 232);
+      float:left;
+        text-align: center;
+    }
+    aside img{
+        width: 90%;
+        text-align: center;
+    
+    }
+    #h1aside{
+        padding:20px 0;
+        border-bottom: 2px solid red;
+        text-align: center;
+    }
+    
+    #article{
+        float:right;
+        width:70%;
+        height: 450px;
+        position: relative;
+    }
+    #box{
+        text-align: center;
+        padding:15px;
+        position: absolute;
+        width:400px;
+        height: 180px;
+        top:50%;
+        left:50%;
+       transform: translate(-50%,-50%);
+       background-color: rgb(245, 245, 232);
+       border-radius: 20px;
+    }
+    #box h1{
+        border-bottom: 3px solid red;
+        padding: 15px 0;
+    }
+    #box p{
+        font-family: 'Markazi Text', serif;
+        text-align: justify;
+    }
+    #contact-box{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    #contact-box img{
+        width:45px;
+      border-bottom: 2px double red;
+      padding-bottom: 10px;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+    #contact-box img:hover{
+        width:55px;
+        border-bottom: 2px solid black;
+    
+    }
+    footer{
+        background-color: rgb(241, 239, 235);
+       width: 100%;
+       height: 200px;
+        text-align: center;
+        border-top: 2px solid rgb(235, 226, 226);
+    }
+    #down img{
+        width:20%;
+       height: 190px;
+       padding: 0 10px;
+       
+    }
+   
+   
+   
+    #print{
+        display:none;
+    }
+    @keyframes changebackground{
+        0%{
+            background-color: white;
+        }
+    50%{
+        background-color:  rgb(236, 67, 67); 
+    }
+    100%{
+        background-color:black;   
+    }
+    }
+    @media only screen and (min-width:940px) and (max-width:1070px){
+        #logoBox{
+            width:35%;
+        }
+        #article{
+            width:65%;
+        }
+        aside{
+            width:35%;
+        }
+    }
+    @media only screen and (max-width:940px) {
+        #logobox{
+            width:40%;
+        }
+    }
+    @media only screen and (max-width:801px){
+        header,main,footer{
+            height:auto;
+        }
+        #logoBox{
+            width:100%;
+        }
+        #h1header, #logo{
+            float:none;
+        }
+        span a{
+            text-decoration: none;
+        }
+        nav{
+            width:100%;
+        }
+        aside{
+            width:100%;
+        }
+        #article{
+            height: 230px;
+            width:100%;
+            background-color: lightgoldenrodyellow;
+        }
+      
+        #down{
+            width:100%;
+        }
+    } 
+    @media only screen and (max-width:500px) {
+        nav li{
+            display:block;
+            width:100%;
+        }
+      
+    }
+    @media only screen and (orientation:landscape) and (max-width:500px){
+      #logoBox{
+          background-color: rgb(11, 241, 241);
+      }  
+    } 
+    @media print{
+      nav{
+          display: none;
+      }
+      #print{
+          display: block;
+      }  
+    }   
+        
+     
